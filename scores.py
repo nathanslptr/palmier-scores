@@ -3,3 +3,5 @@ print("=== Classement des playstests ===")
 for nom, score in sorted(scores.items(), key=lambda x: x[1], reverse=True):
     print(f"{nom:<10} {score:>7}")
 
+moyenne = sum(scores.values()) / len(scores)
+print("Moyenne :", moyenne)
